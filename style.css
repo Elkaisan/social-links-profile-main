@@ -1,0 +1,96 @@
+@import url("./boilerplate.css");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--color-grey-900);
+}
+
+/* --- card --- */
+.card {
+  background-color: var(--color-grey-800);
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  border-radius: 0.75rem;
+  justify-content: center;
+  text-align: center;
+}
+
+/* --- text --- */
+.card * {
+  color: var(--color-white);
+}
+
+/* --- profile info --- */
+.profile-info {
+  margin: var(--spacing-300) 0;
+}
+
+.profile-location {
+  color: var(--color-green);
+}
+
+.profile-bio {
+  margin-bottom: var(--spacing-300);
+}
+
+/* --- links section --- */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  max-width: 23.5rem;
+  width: 100%;
+  flex-shrink: 1;
+  gap: var(--spacing-200);
+}
+
+.button {
+  background-color: var(--color-grey-700);
+  border: none;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  line-height: 2.8125rem;
+  width: 100%;
+}
+
+/* --- HOVER EFFECT --- */
+.button:hover {
+  background-color: var(--color-green);
+  color: var(--color-grey-700);
+  transition: all 0.3s ease-in-out;
+}
+
+/* ---- MEDIA QUERIES ---- */
+
+@media (min-width: 769px) {
+  .button {
+    width: 19rem; /* Masaüstü için sabit genişlik */
+  }
+}
+
+/* tablet  */
+@media (max-width: 768px) and (min-width: 377px) {
+  body {
+    padding: 40px;
+  }
+  .social-links {
+    width: 23.5rem;
+  }
+  .card {
+    padding: 40px;
+    max-height: 90vh;
+  }
+}
+
+/* mobile */
+@media (max-width: 376px) {
+  body {
+    padding: 0px 24px;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+}
