@@ -18,7 +18,7 @@ html {
 /* inter 40-700 - regular */
 @font-face {
   font-family: "Inter";
-  src: url(./assets/fonts/Inter-VariableFont_slnt\wght.ttf) format("truetype");
+  src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
   font-style: normal;
   font-weight: 400 700; /* 400 ve 700 arasını kapsar */
 }
